@@ -4,6 +4,6 @@ class User < ActiveRecord::Base
   has_many :microposts
 
   # Valide la présence de champs complétés
-  validates FILL_IN, presence: true
-  validates FILL_IN, presence: true
+  validates name, presence: true
+  validates email, presence: true
 end
