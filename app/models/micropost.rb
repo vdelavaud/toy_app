@@ -4,5 +4,5 @@ class Micropost < ActiveRecord::Base
 
   # limiter la longueur d'un post
   validates :content, length: { maximum: 140 },
-                      presence: true
+                      presence: true # Valide la présence de contenu du post
 end
